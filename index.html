@@ -23,20 +23,6 @@
     <title>Frontend Mentor | Equalizer landing page</title>
   </head>
   <body>
-    <picture class="main-bg">
-      <!-- Large screens -->
-      <source
-        media="(min-width: 1256px)"
-        srcset="./assets/bg-main-desktop.png"
-      />
-      <!-- Medium screens -->
-      <source media="(min-width: 768px)" srcset="./assets/bg-main-tablet.png" />
-      <img
-        src="./assets/bg-main-mobile.png"
-        alt="half transparant colored bubbles"
-      />
-    </picture>
-
     <header class="header container">
       <div class="logo">
         <img src="./assets/logo.svg" alt="" class="logo-img" />
@@ -44,6 +30,23 @@
     </header>
 
     <main>
+      <picture class="main-bg">
+        <!-- Large screens -->
+        <source
+          media="(min-width: 1256px)"
+          srcset="./assets/bg-main-desktop.png"
+        />
+        <!-- Medium screens -->
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/bg-main-tablet.png"
+        />
+        <img
+          src="./assets/bg-main-mobile.png"
+          alt="half transparant colored bubbles"
+        />
+      </picture>
+
       <section class="hero-section container">
         <h1 class="heading-1">We make your music sound extraordinary.</h1>
         <p class="paragraph">
