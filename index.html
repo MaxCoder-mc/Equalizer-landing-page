@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./queries.css" />
+    <title>Frontend Mentor | Equalizer landing page</title>
+  </head>
+  <body>
+    <picture class="main-bg">
+      <!-- Large screens -->
+      <source
+        media="(min-width: 1256px)"
+        srcset="./assets/bg-main-desktop.png"
+      />
+      <!-- Medium screens -->
+      <source media="(min-width: 768px)" srcset="./assets/bg-main-tablet.png" />
+      <img
+        src="./assets/bg-main-mobile.png"
+        alt="half transparant colored bubbles"
+      />
+    </picture>
+
+    <header class="header container">
+      <div class="logo">
+        <img src="./assets/logo.svg" alt="" class="logo-img" />
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section container">
+        <h1 class="heading-1">We make your music sound extraordinary.</h1>
+        <p class="paragraph">
+          A system audio equalizer specifically designed for Android and iOS.
+          Freely tune the way your music sounds with a professional grade
+          parametric EQ & volume mixer. Control bass, mids, treble, gain
+          control, reverb, and more!
+        </p>
+      </section>
+
+      <section class="cta-section">
+        <div class="cta-picture">
+          <img
+            src="./assets/illustration-app.png"
+            alt="illustration app"
+            class="cta-img"
+          />
+        </div>
+        <div class="cta-content-BG">
+          <div class="cta-content">
+            <h2 class="heading-2">Premium EQ</h2>
+            <p class="paragraph">
+              Get expert-level control with a robust equalizer, volume mixer,
+              and spatial audio. Take your listening experience to a whole new
+              level and access all our incredible features!
+            </p>
+            <div class="cta-price">
+              <span class="price">$4</span>
+              <p>/ month</p>
+            </div>
+            <div class="btns">
+              <button class="btn apple-btn">
+                <img
+                  src="./assets/icon-apple.svg"
+                  alt="apple"
+                  class="btn-icon"
+                />
+                iOS Download
+              </button>
+              <button class="btn android-btn">
+                <img
+                  src="./assets/icon-android.svg"
+                  alt="android"
+                  class="btn-icon"
+                />
+                Android Download
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <div class="footer-logo">
+        <img src="./assets/logo.svg" alt="" class="logo-img" />
+      </div>
+      <div class="footer-content">
+        <div class="footer-paragraph">
+          <p>All rights reserved © Equalizer 2021</p>
+          <p>
+            Have any problems? Contact us via social media or email us at <br />
+            <span>equalizer@example.com</span>
+          </p>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="facebook"
+            ><img
+              src="./assets/icon-facebook.svg"
+              alt="facebook"
+              class="social-icon"
+          /></a>
+          <a href="#" class="social-link" aria-label="instagram"
+            ><img
+              src="./assets/icon-instagram.svg"
+              alt="instagram"
+              class="social-icon"
+          /></a>
+          <a href="#" class="social-link" aria-label="twitter"
+            ><img
+              src="./assets/icon-twitter.svg"
+              alt="twitter"
+              class="social-icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

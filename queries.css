@@ -1,0 +1,119 @@
+@media (min-width: 48rem) {
+  :root {
+    --Text-Preset-1: 700 calc((64 / 16) * 1rem) / 1 "IBM Plex Sans", sans-serif;
+    --Text-Preset-4: 400 calc((18 / 16) * 1rem) / 1.5 "IBM Plex Sans",
+      sans-serif;
+
+    --container-padding: var(--L-40);
+    --container-width: calc((1048 / 16) * 1rem);
+  }
+
+  .main-bg {
+    right: 0;
+    left: -15rem;
+  }
+  .header::after {
+    content: "";
+    width: calc((267 / 16) * 1rem);
+    height: calc((400 / 16) * 1rem);
+    background: url("./assets/bg-pattern-1.svg") no-repeat top;
+    background-size: contain;
+
+    position: absolute;
+    top: -2.5rem;
+    right: -2.5rem;
+    z-index: -1;
+  }
+
+  .heading-1 {
+    max-width: 75%;
+  }
+  .hero-section .paragraph {
+    max-width: 64%;
+  }
+
+  /* ************** CTA **************** */
+  .cta-section {
+    flex-direction: row;
+    justify-content: center;
+
+    width: calc(100% - (2 * var(--container-padding)));
+    max-width: calc(var(--container-width) - (2 * var(--container-padding)));
+    margin-inline: auto;
+    margin-block: 8rem calc((360 / 16) * 1rem);
+  }
+  .cta-picture {
+    width: calc((270 / 16) * 1rem);
+    transform: translateX(3rem);
+    align-self: start;
+  }
+  .cta-section::before {
+    height: calc((600 / 16) * 1rem);
+    border-radius: 1rem;
+
+    top: 20.6%;
+  }
+  .cta-picture::after {
+    top: 24%;
+    left: -3rem;
+
+    transform: translateX(0%);
+  }
+  .cta-content-BG {
+    width: calc((356 / 16) * 1rem);
+    height: calc((628 / 16) * 1rem);
+    padding: 3rem;
+    border-radius: 1rem;
+
+    transform: translate(-5rem, 14rem);
+  }
+  /* *********************************** */
+  .footer-content {
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .social-links {
+    align-self: center;
+  }
+}
+@media (min-width: 78.5rem) {
+  :root {
+    --Text-Preset-1: 700 calc((88 / 16) * 1rem) / 1 "IBM Plex Sans", sans-serif;
+    --Text-Preset-4: 400 calc((20 / 16) * 1rem) / 1.5 "IBM Plex Sans",
+      sans-serif;
+
+    --container-padding: var(--XXL-80);
+    --container-width: calc((1300 / 16) * 1rem);
+  }
+
+  .main-bg {
+    top: -12rem;
+    left: -3rem;
+  }
+
+  .header::after {
+    right: 0;
+  }
+
+  .cta-picture::after {
+    top: 16%;
+    left: 17.5rem;
+  }
+  .cta-picture {
+    width: calc((312 / 16) * 1rem);
+    transform: translate(-1rem, 2rem);
+  }
+  .cta-content-BG {
+    width: calc((512 / 16) * 1rem);
+    padding-inline: calc((56 / 16) * 1rem);
+
+    transform: translate(4rem, 14rem);
+  }
+
+  .footer {
+    flex-direction: row;
+    gap: var(--XXXL-128);
+  }
+}
