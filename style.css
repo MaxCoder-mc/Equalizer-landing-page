@@ -35,6 +35,7 @@ html {
 }
 body {
   color: var(--Slate);
+  background-color: var(--White);
   font: var(--Text-Preset-4);
 
   position: relative;
