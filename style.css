@@ -38,6 +38,8 @@ body {
   background-color: var(--White);
   font: var(--Text-Preset-4);
 
+  min-height: 100vh;
+
   position: relative;
   overflow: hidden;
 }
